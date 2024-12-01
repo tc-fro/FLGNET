@@ -1,10 +1,8 @@
 import torch
 import torch.nn as nn
 import torch.nn.functional as F
-from net.ResNet import resnet50
 from math import log
-from net.Res2Net import res2net50_v1b_26w_4s
-from net.PVT_V2 import pvt_v2_b1, pvt_v2_b3, pvt_v2_b5
+from net.PVT_V2 import  pvt_v2_b3
 from timm.models.vision_transformer import Block
 
 class ConvBNR(nn.Module):
